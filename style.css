@@ -1,0 +1,984 @@
+/*
+Theme Name : chavezroofing
+Theme URI: 
+Author: Romina Aliotta - 
+Author URI: https://www.linkedin.com/in/romina-aliotta/
+Description: WP theme for a roofing company
+Version: 1.0
+Licence: All rights reserved
+Tags: html5, css3, roofing, company, business
+*/
+
+/* GENERAL */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+
+}
+  .h2-white {
+    color: #fff;
+  }
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0;
+}
+a:hover{
+  text-decoration: none;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+.main-button {
+
+  padding: 10px 20px;
+  background-color: #001361;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+
+@media only screen and (max-width: 768px){
+     .main-button {
+      font-size: 10px;
+      padding: 5px 10px;
+     }
+
+}
+
+
+p {
+  
+  color: #878787;
+  font-size: 1.1em;
+  font-weight: 200;
+  line-height: 20px;
+
+}
+
+span.blue {
+  color: #001361;
+}
+
+hr.line-blue {
+  border-top: 3px solid  #001361;
+  width: 82px;
+
+   
+}
+hr.line-white {
+  border-top: 3px solid  #fff;
+  width: 82px;
+
+   
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px){
+     h1{
+      font-size: 1.7em;
+     }
+   }
+
+@media only screen and (max-width: 592px){
+     h1{
+      font-size: 1em;
+     }
+
+}
+
+/* BOOTSRAP EXTENTION */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+
+
+/* NAVEGATION */
+.logo{
+	float:left;
+	max-width: 250px;
+}
+
+.main-navbar{
+	padding: 0px 70px;
+}
+
+#navbar-pages{
+	float: right;
+	height: 100px;
+	display: none;
+}
+#navbar-pages ul{
+	line-height: 100px;
+}
+
+#navbar-pages ul li {
+	display: inline-block;
+	padding-right: 30px;
+
+}
+#navbar-pages ul li a{
+	font-family: font112192;
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 0.5px;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 875px){
+
+#navbar-pages{
+	display: block;
+}
+}
+@media only screen and (max-width: 510px){
+
+	.main-navbar{
+	padding: 0;
+}
+    #navbar-pages ul{
+    	padding-left: 10px;
+    	height: 50px;
+    	line-height: 50px;
+    }
+    
+     #navbar-pages li{
+
+     	margin: 0;
+     	width: 100%;
+        display: block;
+     	background-color: blue;
+     	text-align: left;
+
+     }
+     #navbar-pages ul{}
+
+
+
+
+}
+   
+   /* mobile-menu*/
+
+
+   .mobile-menu{
+   	float: right;
+   }
+   
+   .mobile-menu a i {
+   	padding-right: 20px;
+   	font-size: 30px;
+   	color: #333;
+   	height: 100px;
+    line-height: 100px;
+
+   }
+
+   @media only screen and (min-width: 875px){
+    .mobile-menu{
+    	display: none;
+
+    }
+
+    } 
+
+
+.navegacion li{
+  vertical-align: middle;
+}
+
+.main-nav {
+	text-align: right;
+}
+
+/*----HERO CAROUSEL---*/
+
+.hero-overlay {
+  background-color: rgba(0,19,97,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.carousel-caption{
+	bottom: 25%;
+}
+.carousel-caption p{
+  font-family: 'Open sans';
+  font-size: 1.6em;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 20px;
+  line-height: 30px;
+}
+
+
+
+@media only screen and (max-width: 1100px){
+
+    .carousel-caption{
+	   bottom: 10%;
+     }
+}
+
+@media only screen and (max-width: 768px){
+
+     .carousel-caption{
+      bottom: 1.5%;
+      }
+      .carousel-caption p{
+        font-size: 0.7em;
+        padding-top: 10px;
+        
+}
+}
+
+/* ------ ABOUT SECTION ---------*/
+
+/*---about-us----*/
+
+#section-about-us .container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-list li{
+  margin-top: 20px;
+  font-family: 'Oswald';
+  font-size: 1.3em;
+  color: #3d3d3d;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+}
+.fa-circle {
+  color: #001361
+
+}
+
+#about-us .main-button {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 752px){
+
+     #section-about-us img{
+      display: none;
+
+     }
+        
+}
+}
+
+
+
+/* ------ SERVICES SECTION ---------*/
+
+#services {
+  padding-bottom: 50px;
+}
+
+
+.service-box{
+  box-sizing: border-box;
+  margin:10px;
+  background-color: #001361;
+
+}
+
+.service-title {
+   padding: 20px 0;
+}
+
+.service-title h3 a {
+  color: #fff;
+
+}
+.service-title h3 a:hover {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.service-img {
+  background-color: #333;
+  max-width: 271px;
+  height: 183px;
+  margin:auto;
+}
+
+.service-img img{
+  object-fit: cover;
+  max-width: 100%;
+  height: 183px;
+
+}
+
+#section-services #services {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#section-services .service {
+  text-align: center;
+  
+}
+
+
+/* ----- TESTIMONIALS SECTION ---------*/
+
+#testimonials .bx-controls-direction{
+  display: none;
+}
+#testimonials .bx-pager-item:active{
+  background-color: #fff;
+}
+
+
+.testimonial-container .bx-wrapper {
+   background-color: #001361;
+   border: 1px solid #fff;
+   border-radius: 20px 20px 20px 20px;
+}
+
+.testimonial-container {
+    max-width: 1050px;
+    margin: 70px auto;
+}
+
+
+#testimonials {
+  background-color: #001361;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 100px 0;
+}
+.testimonial-slide{
+  background-color: #001361;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.testimonials-title h2 {
+   text-align: center;
+}
+
+.fa-quote-left{
+
+font-size: 2em;
+color: #fff;
+}
+
+.testimonial-slide .client {
+  font-family: 'Oswald' sans-serif;
+  font-size: 25px;
+  font-weight: extra-light;
+  font-style: italic;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.testimonial-slide p{
+ color: #fff;
+ font-family: 'Open sans';
+ font-weight: lighter;
+ font-size: 1em;
+}
+
+@media only screen and (max-width: 768px){
+
+     #testimonials img{
+      display: none;
+
+     }
+        
+}
+
+
+/* ----- PROJECTS SECTION ---------*/
+
+#projects-section {
+  margin: 100px 0;
+
+}
+
+#projects-section h2 {
+  text-align: center;
+
+}
+
+#latest-projects {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#latest-projects .col-md-5{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-imgs {
+  margin-top: 50px;
+  
+}
+
+
+.project-home{
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 286px;
+}
+
+.project-home img{
+  object-fit: cover;
+  width: 100%;
+  height: 286px;
+  
+ border-radius: 50px;
+  
+  
+}
+
+
+
+/* ----- QUOTE SECTION ---------*/
+
+#quote-section{
+  background-image: url(assets/img/quote.jpg);
+  padding: 50px 0;
+  background-size: cover;
+  position: relative;
+  margin-top: 100px;
+  
+
+}
+
+#quote-section h2{
+  text-align: center;
+}
+
+.quote-overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: rgba(0,19,97,0.8);
+}
+
+#quote-section * {
+    position: relative;
+    /* hack */
+}
+
+#quote-form {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.page-id-27 .wpcf7-form-control-wrap input[type=text]{
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+
+}
+
+.page-id-27 .wpcf7-form-control-wrap input[type=tel]{
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+.page-id-27 .wpcf7-form-control-wrap input[type=email]{
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.page-id-27 .wpcf7-form-control-wrap input[type=textarea]{
+    width: 98%;
+    padding: 25px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    
+}
+
+.page-id-27  .submit-contact{
+  padding: 10px 20px;
+  background-color: #001361;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+
+
+
+
+/* ----- FOOTER ---------*/
+
+#footer {
+  box-sizing: border-box;
+  background-color: #000;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-top: 20px;
+
+}
+
+.line-footer {
+  background-color: #fff;
+  width: 70px;
+}
+#first-footer ul{
+  list-style: none;
+
+}
+
+#first-footer h4{
+ color: #fff;
+ font-family: 'Oswald', sans-serif;
+ font-size: 25px;
+
+}
+
+
+.footer-quicklinks,
+.footer-services,
+.footer-contact,
+.footer-call ul {
+
+  list-style: none;
+  color: #fff;
+  padding-top: 20px;
+
+}
+
+#first-footer ul li {
+  font-family: 'Open sans';
+  color: #fff;
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+
+#first-footer ul li a{
+ color: #fff;
+}
+
+#first-footer .social li {
+  display: inline-block;
+}
+
+.footer-call h4{
+  color: #fff;
+ font-family: 'Oswald', sans-serif;
+ font-size: 30px;
+ padding-top: 20px;
+}
+
+.footer-contact .social li a i {
+  font-size: 35px;
+  padding-right: 10px;
+}
+/*--second footer--*/
+
+#second-footer {
+  margin-top: 50px;
+  border-top: 0.1px #fff solid;
+}
+
+.footer-copyrights p{
+  font-family: 'Opens Sans';
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.footer-cards ul li {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+
+}
+.footer-cards {
+  padding-top: 10px;
+  text-align: right;
+}
+
+
+
+/************************************
+****************SERVICES PAGE**********
+***************************************/
+
+
+/* ----- TESTIMONIALS SECTION ---------*/
+
+.services-hero h1{
+    color:#fff;
+    text-align: center;
+    line-height: 200px;
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+
+}
+
+#page-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#page-header > .jumbotron {
+  background-color: rgba(0,19,97,0.7);
+  
+}
+
+#service-page-title {
+   padding: 50px 50px;
+
+}
+#service-page-title h2{
+ font-size: 2em;
+}
+
+/* ----- SERVICE SECTION ---------*/
+
+#all-services{
+ padding: 30px 100px;
+}
+
+.each-service{
+  margin-top: 50px;
+  
+}
+
+.each-service-text {
+  background: #fff;
+  border-top: 1px solid #001361;
+}
+.each-service-text h3{
+  color: #001361;
+  padding-top: 20px;
+}
+.each-service-text p{
+  color: #878787;
+  padding: 20px 0;
+}
+
+
+/* ----- QUOTE SECTION ---------*/
+
+
+.page-id-77 .wpcf7-form-control-wrap input[type=text]{
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+
+}
+
+.page-id-77 .wpcf7-form-control-wrap input[type=tel]{
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+.page-id-77 .wpcf7-form-control-wrap input[type=email]{
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.page-id-77 .wpcf7-form-control-wrap input[type=textarea]{
+    width: 98%;
+    padding: 25px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    
+}
+
+.page-id-77  .submit-contact{
+  padding: 10px 20px;
+  background-color: #001361;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+/* ----- REVIEWS SECTION ---------*/
+
+.comments-list-services {
+   margin-left: 500px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   border-top: 1px solid #001361;
+}
+
+.comments-list-services ul {
+  list-style: none;
+}
+
+.comments-list-services .comment-author {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.comments-list-services .comment-meta a{
+  font-family: 'Open Sans';
+  color: #001361;
+}
+
+.comments-list-services .reply a{
+  font-family: 'Open Sans';
+  color: #001361;
+}
+
+.comments-form-reviews{
+   margin-left: 500px;
+   padding-top: 30px;
+   border-top: 1px solid #001361;
+
+}
+
+.comments-form-reviews a{
+font-family: 'Open Sans';
+  color: #001361;
+
+}
+
+.comments-form-reviews .form-submit input{
+padding: 10px 20px;
+  background-color: #001361;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+****************CONTACT PAGE**********
+***************************************/
+
+/* ----- CONTACT SECTION ---------*/
+
+#contact-form {
+  padding-left: 30px;
+
+}
+
+#contact-info {
+  
+}
+
+
+
+.page-id-11 .wpcf7-form-control-wrap input[type=text]{
+    width: 49%;
+    float: left;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+
+}
+
+.page-id-11 .wpcf7-form-control-wrap input[type=tel]{
+    width: 49%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+.page-id-11 .wpcf7-form-control-wrap input[type=email]{
+    width: 98%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.page-id-11 .wpcf7-form-control-wrap input[type=textarea]{
+    width: 98%;
+    padding: 25px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    
+}
+
+.page-id-11  .submit-contact{
+  padding: 10px 20px;
+  background-color: #001361;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+
+/****** information ******/
+
+#contact-info {
+  padding: 0 0 ;
+}
+
+  
+
+.info-icon i{
+  font-size: 80px;
+  color: #878787;
+}
+
+.info-text {
+  padding-top: 15px;
+}
+
+
+.info-text h3 {
+  font-size: 20px;
+  color: #3d3d3d;
+
+}
+
+
+
